@@ -107,16 +107,12 @@ void recebe_da_node_mcu(void *vParam){
 		//Aguarda receber um caracter da UART1 que esta conectada ao Node MCU
 		caracter = readChar(1);
 		if (caracter == '1') {
-//				  HAL_GPIO_WritePin(GPIOB, GPIO_PIN_10, 0); //verde
-				  HAL_GPIO_WritePin(GPIOC, GPIO_PIN_7, 1);
-			//	  HAL_GPIO_TogglePin(GPIOB, GPIO_PIN_4);
-			//	  HAL_GPIO_TogglePin(GPIOC, GPIO_PIN_7); //azul
+			HAL_GPIO_WritePin(GPIOC, GPIO_PIN_7, 1);
+//			HAL_GPIO_TogglePin(GPIOB, GPIO_PIN_4);
 		} else if (caracter == '0'){
 //			HAL_GPIO_WritePin(GPIOB, GPIO_PIN_10, 1); //verde
 			HAL_GPIO_WritePin(GPIOC, GPIO_PIN_7, 0);
 		}
-		//Envia o caracter recebido para a UART 2 que está conectada ao terminal serial
-//		sendChar(caracter, 2);
 		vTaskDelay(1);
 	}
 }

@@ -5341,11 +5341,11 @@ LOAD /Applications/STM32CubeIDE.app/Contents/Eclipse/plugins/com.st.stm32cube.id
                 0x0000000008000508       0x50 ./Core/Src/main.o
                 0x0000000008000508                sendChar
  .text.readChar
-                0x0000000008000558       0x58 ./Core/Src/main.o
+                0x0000000008000558       0x54 ./Core/Src/main.o
                 0x0000000008000558                readChar
  .text.recebe_da_node_mcu
-                0x00000000080005b0       0x3c ./Core/Src/main.o
-                0x00000000080005b0                recebe_da_node_mcu
+                0x00000000080005ac       0x40 ./Core/Src/main.o
+                0x00000000080005ac                recebe_da_node_mcu
  .text.envia_para_node_mcu
                 0x00000000080005ec       0x24 ./Core/Src/main.o
                 0x00000000080005ec                envia_para_node_mcu
@@ -6475,32 +6475,32 @@ LOAD /Applications/STM32CubeIDE.app/Contents/Eclipse/plugins/com.st.stm32cube.id
  .debug_macro   0x000000000002ab66      0x233 ./Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/port.o
  .debug_macro   0x000000000002ad99      0x1c0 ./Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.o
 
-.debug_line     0x0000000000000000    0x1b3a7
+.debug_line     0x0000000000000000    0x1b39f
  .debug_line    0x0000000000000000      0x995 ./Core/Src/freertos.o
- .debug_line    0x0000000000000995      0xf0b ./Core/Src/main.o
- .debug_line    0x00000000000018a0      0x906 ./Core/Src/stm32l4xx_hal_msp.o
- .debug_line    0x00000000000021a6      0x7cb ./Core/Src/stm32l4xx_hal_timebase_tim.o
- .debug_line    0x0000000000002971      0x82d ./Core/Src/stm32l4xx_it.o
- .debug_line    0x000000000000319e      0x7f8 ./Core/Src/system_stm32l4xx.o
- .debug_line    0x0000000000003996       0x88 ./Core/Startup/startup_stm32l476rgtx.o
- .debug_line    0x0000000000003a1e      0xb51 ./Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal.o
- .debug_line    0x000000000000456f     0x1ebf ./Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_adc.o
- .debug_line    0x000000000000642e     0x18d2 ./Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_adc_ex.o
- .debug_line    0x0000000000007d00      0xcf7 ./Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_cortex.o
- .debug_line    0x00000000000089f7      0xd2f ./Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_dma.o
- .debug_line    0x0000000000009726      0xbc4 ./Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_gpio.o
- .debug_line    0x000000000000a2ea      0xd48 ./Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_pwr_ex.o
- .debug_line    0x000000000000b032      0xfca ./Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc.o
- .debug_line    0x000000000000bffc     0x1509 ./Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc_ex.o
- .debug_line    0x000000000000d505     0x3dbd ./Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_tim.o
- .debug_line    0x00000000000112c2     0x1c56 ./Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_tim_ex.o
- .debug_line    0x0000000000012f18     0x32ce ./Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart.o
- .debug_line    0x00000000000161e6      0xc99 ./Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart_ex.o
- .debug_line    0x0000000000016e7f     0x1204 ./Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.o
- .debug_line    0x0000000000018083      0x73f ./Middlewares/Third_Party/FreeRTOS/Source/list.o
- .debug_line    0x00000000000187c2     0x1976 ./Middlewares/Third_Party/FreeRTOS/Source/tasks.o
- .debug_line    0x000000000001a138      0x906 ./Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/port.o
- .debug_line    0x000000000001aa3e      0x969 ./Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.o
+ .debug_line    0x0000000000000995      0xf03 ./Core/Src/main.o
+ .debug_line    0x0000000000001898      0x906 ./Core/Src/stm32l4xx_hal_msp.o
+ .debug_line    0x000000000000219e      0x7cb ./Core/Src/stm32l4xx_hal_timebase_tim.o
+ .debug_line    0x0000000000002969      0x82d ./Core/Src/stm32l4xx_it.o
+ .debug_line    0x0000000000003196      0x7f8 ./Core/Src/system_stm32l4xx.o
+ .debug_line    0x000000000000398e       0x88 ./Core/Startup/startup_stm32l476rgtx.o
+ .debug_line    0x0000000000003a16      0xb51 ./Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal.o
+ .debug_line    0x0000000000004567     0x1ebf ./Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_adc.o
+ .debug_line    0x0000000000006426     0x18d2 ./Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_adc_ex.o
+ .debug_line    0x0000000000007cf8      0xcf7 ./Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_cortex.o
+ .debug_line    0x00000000000089ef      0xd2f ./Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_dma.o
+ .debug_line    0x000000000000971e      0xbc4 ./Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_gpio.o
+ .debug_line    0x000000000000a2e2      0xd48 ./Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_pwr_ex.o
+ .debug_line    0x000000000000b02a      0xfca ./Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc.o
+ .debug_line    0x000000000000bff4     0x1509 ./Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc_ex.o
+ .debug_line    0x000000000000d4fd     0x3dbd ./Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_tim.o
+ .debug_line    0x00000000000112ba     0x1c56 ./Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_tim_ex.o
+ .debug_line    0x0000000000012f10     0x32ce ./Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart.o
+ .debug_line    0x00000000000161de      0xc99 ./Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart_ex.o
+ .debug_line    0x0000000000016e77     0x1204 ./Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.o
+ .debug_line    0x000000000001807b      0x73f ./Middlewares/Third_Party/FreeRTOS/Source/list.o
+ .debug_line    0x00000000000187ba     0x1976 ./Middlewares/Third_Party/FreeRTOS/Source/tasks.o
+ .debug_line    0x000000000001a130      0x906 ./Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/port.o
+ .debug_line    0x000000000001aa36      0x969 ./Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.o
 
 .debug_str      0x0000000000000000   0x110814
  .debug_str     0x0000000000000000   0x10360e ./Core/Src/freertos.o

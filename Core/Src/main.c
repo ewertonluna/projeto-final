@@ -90,10 +90,10 @@ void sendString(char * str, int uart_number){
 }
 
 char readChar(int uart_number){
-	unsigned char caracter;
+	unsigned char caracter = 255;
 
 	if(uart_number == 1){
-		while(HAL_UART_Receive(&huart1, &caracter, 1, HAL_MAX_DELAY) != HAL_OK);
+		HAL_UART_Receive(&huart1, &caracter, 1, 0);
 	}
 	else if(uart_number == 2){
 		while(HAL_UART_Receive(&huart2, &caracter, 1, HAL_MAX_DELAY) != HAL_OK);
@@ -111,7 +111,7 @@ void recebe_da_node_mcu(void *vParam){
 				  HAL_GPIO_WritePin(GPIOC, GPIO_PIN_7, 1);
 			//	  HAL_GPIO_TogglePin(GPIOB, GPIO_PIN_4);
 			//	  HAL_GPIO_TogglePin(GPIOC, GPIO_PIN_7); //azul
-		} else {
+		} else if (caracter == '0'){
 //			HAL_GPIO_WritePin(GPIOB, GPIO_PIN_10, 1); //verde
 			HAL_GPIO_WritePin(GPIOC, GPIO_PIN_7, 0);
 		}
